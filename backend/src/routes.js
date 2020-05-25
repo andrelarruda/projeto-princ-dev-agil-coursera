@@ -9,5 +9,6 @@ routes.get("/", (req, res) => {
 });
 
 routes.post("/auth/authenticate", authController.logar);
+routes.get("/auth/listar", authController.listarPessoas);
 
 module.exports = routes;

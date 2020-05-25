@@ -17,4 +17,9 @@ module.exports = {
 
       return res.status(200).send({ id: pessoa.id });
    },
+
+   async listarPessoas(req, res) {
+      const pessoas = await Pessoa.findAll();
+      return res.send(pessoas);
+   },
 };
