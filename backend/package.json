@@ -7,7 +7,7 @@
       "start": "cross-env NODE_ENV=development node src/index.js",
       "dev": "cross-env NODE_ENV=development nodemon src/index.js",
       "migrate": "npx sequelize-cli db:migrate",
-      "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate",
+      "migrate:reset": "npx sequelize-cli db:create && npx sequelize-cli db:migrate:undo:all && npm run migrate",
       "test": "cross-env NODE_ENV=test jest --testTimout=10000",
       "pretest": "cross-env NODE_ENV=test npm run migrate:reset"
    },
