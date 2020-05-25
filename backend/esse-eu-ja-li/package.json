@@ -1,0 +1,38 @@
+{
+   "name": "esse-eu-ja-li",
+   "version": "1.0.0",
+   "description": "Projeto criado para o curso Princípios de Desenvolvimento Ágil de Software - ITA (Coursera)",
+   "main": "index.js",
+   "scripts": {
+      "start": "node src/index.js",
+      "dev": "nodemon src/index.js",
+      "migrate": "npx sequelize-cli db:migrate",
+      "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate",
+      "test": "cross-env NODE_ENV=test jest --testTimout=10000",
+      "pretest": "cross-env NODE_ENV=test npm run migrate:reset"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "jest": {
+      "testEnvironment": "node",
+      "coveragePathIgnorePatterns": [
+         "/node_modules/",
+         "request.rest"
+      ]
+   },
+   "dependencies": {
+      "bcrypt": "^4.0.1",
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mysql2": "^2.1.0",
+      "sequelize": "^5.21.8",
+      "sequelize-cli": "^5.5.1"
+   },
+   "devDependencies": {
+      "jest": "^26.0.1",
+      "nodemon": "^2.0.3",
+      "supertest": "^4.0.2"
+   }
+}
