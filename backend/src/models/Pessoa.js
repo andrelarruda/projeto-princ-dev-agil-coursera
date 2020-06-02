@@ -15,6 +15,11 @@ class Pessoa extends Model {
          }
       );
    }
+
+   static associate(models) {
+      this.hasMany(models.Leitura, { foreignKey: "idPessoa", as: "leituras" });
+      this.hasMany(models.Trofeu, { foreignKey: "idPessoa", as: "trofeus" });
+   }
 }
 
 module.exports = Pessoa;
