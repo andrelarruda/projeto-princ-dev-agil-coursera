@@ -16,6 +16,7 @@ class Leitura extends Model {
    static associate(models) {
       this.belongsTo(models.Pessoa, { foreignKey: "idPessoa", as: "pessoa" });
       this.belongsTo(models.Livro, { foreignKey: "idLivro", as: "livro" });
+      this.belongsTo(models.Genero, { foreignKey: "idGenero", as: "genero" });
    }
 }
 

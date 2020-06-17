@@ -1,0 +1,63 @@
+.detail-container {
+  width: 100%;
+  padding: 0 60px;
+  margin: 32px auto;
+}
+
+.detail-container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-container footer {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+#voltar {
+  background: #e02041;
+}
+
+.detail-container h1 {
+  /* margin-left: 16px; */
+  color: #404541;
+  font-size: 24px;
+  padding-left: 12px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.detail-container .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  width: 60%;
+  min-height: 350px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: left;
+  grid-gap: 8px;
+  border: solid;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.grid-container strong {
+  font-size: 16px;
+}
+
+.grid-container p {
+  font-size: 18px;
+}
+
+.detail .button {
+  width: 150px;
+  justify-self: center;
+}

@@ -21,8 +21,8 @@ module.exports = {
          },
          {
             id: 3,
-            nome: "Maria Luiza",
-            email: "marialuiza@email.com",
+            nome: "Ruane Almeida",
+            email: "ruane@email.com",
             senha: "123456",
             createdAt: new Date(),
             updatedAt: new Date(),
@@ -69,8 +69,8 @@ module.exports = {
          },
          {
             id: 9,
-            nome: "Livia Noris",
-            email: "livia@email.com",
+            nome: "Maggie Almeida Arruda",
+            email: "maggie@email.com",
             senha: "123456",
             createdAt: new Date(),
             updatedAt: new Date(),

@@ -1,0 +1,96 @@
+.ranking-container {
+  width: 100%;
+  max-width: 1180px;
+  max-height: 100%;
+  padding: 0 30px;
+  margin: 32px auto;
+}
+
+.ranking-container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking-container h1 {
+  color: #404541;
+  font-size: 24px;
+  padding-left: 12px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.ranking-container .usuarios-list {
+  width: 100%;
+}
+
+.ranking-container .usuarios-list a {
+  text-decoration: none;
+}
+
+.ranking-container .usuarios-list a:link {
+  color: #404541;
+}
+
+.ranking-container .usuarios-list a:visited {
+  color: #404541;
+}
+
+.ranking-container .usuarios-list a:hover {
+  font-weight: bold;
+}
+
+.ranking-container .usuarios-list a:active {
+  color: black;
+}
+
+.ranking-container .usuarios-list .usuario-element {
+  width: 100%;
+  height: 170px;
+  /* background-color: #333; */
+  margin-bottom: 8px;
+  padding: 12px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ranking-container .usuarios-list .usuario-element strong {
+  font-size: 12px;
+  color: #404541;
+  margin-bottom: 6px;
+}
+
+.ranking-container .usuarios-list .usuario-element p {
+  font-size: 20px;
+}
+
+.ranking-container .usuarios-list .usuario-element .col0 {
+  width: 5%;
+  border-right-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ranking-container .usuarios-list .usuario-element .col1 {
+  width: 55%;
+  border-right-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-container .usuarios-list .usuario-element .col2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
